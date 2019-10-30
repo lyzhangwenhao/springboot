@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tom.springboot.mapper.TeacherMapper">
+    <!--
+    /**
+     * 查询所有的老师
+     * @return
+     */
+    List<Teacher> findAllTeacher();
+
+    /**
+     * 根据Id删除老师信息
+     * @param id
+     * @return
+     */
+    Integer deleteTeacherById(Integer id);
+    -->
+    <select id="findAllTeacher" resultType="com.tom.springboot.entity.Teacher">
+        select * from teacher
+    </select>
+
+    <delete id="deleteTeacherById">
+        delete from teacher where tea_id = #{id}
+    </delete>
+</mapper>

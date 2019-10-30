@@ -1,0 +1,6 @@
+person:
+  lastName: "张三"
+  age: 12
+  dog:
+    dogName: "小花"
+    age: 10
